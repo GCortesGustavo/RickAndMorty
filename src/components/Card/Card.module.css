@@ -1,0 +1,39 @@
+/* h2 {
+    color: blue;
+} */
+* {
+    background-image: url(https://images3.alphacoders.com/812/812062.png) ;
+}
+.container {
+    background-color: aliceblue;
+    border-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+    height: 300px;
+    width: 700px;
+}
+.name {
+    color: white;
+}
+
+.status {
+    color: white;
+}
+
+.species {
+
+}
+
+.gender {
+
+}
+
+.origin {
+
+}
+
+.image {
+
+}
