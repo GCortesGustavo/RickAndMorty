@@ -4,6 +4,7 @@ import Cards from './components/Cards/Cards.jsx';
 import SearchBar from './components/SearchBar/SearchBar.jsx';
 import characters, { Rick } from './data.js';
 
+//Este es un mensaje de prueba
 
 function App() {
    return (
