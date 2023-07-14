@@ -1,5 +1,5 @@
 h2 {
-    color: #A2FF86;
+    color:  black;
     margin: 0;
     padding: 0px;
 }
@@ -10,7 +10,7 @@ h2 {
     width: 400px;
     height: 680px;
     margin: 10px;
-    background-color: aliceblue;
+    background-image: url(../../images/ricky6.webp);
     border-radius: 28px;
 }
 
