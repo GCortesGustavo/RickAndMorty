@@ -5,10 +5,14 @@ const Nav = ({onSearch}) => {
     return(
         <div>
             <SearchBar onSearch={onSearch} />
-            <Link>
-                <button>About</button>
-                <button>Home</button>
-            </Link>
+            
+            <button>
+                <Link to="/about">About</Link>
+            </button>
+            <button>
+                <Link to="/home">Home</Link>
+            </button>
+            
         </div>
 
     )
