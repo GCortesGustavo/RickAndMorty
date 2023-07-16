@@ -1,10 +1,10 @@
 import style from "./Card.module.css"
 
 export default function Card(props) {
-   const {name, status, species, gender, origin, image, onClose} = props
+   const {id, name, status, species, gender, origin, image, onClose} = props
    return (
       <div className={style.container}>
-         <button className={style.exit} onClick={onClose}>X</button>
+         <button className={style.exit} onClick={() => onClose(id)}>X</button>
          <div className={style.minicontainer}>
          <h2 className={style.name}>{name}</h2>
          <h2 className={style.status}>{status}</h2>
