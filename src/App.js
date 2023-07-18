@@ -3,7 +3,7 @@ import Cards from './components/Cards/Cards.jsx';
 import Nav from './components/Nav/Nav';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Route, Routes, useLocation, useNavigate, } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
@@ -27,7 +27,7 @@ function App() {
 
    useEffect(() => {
       !access && navigate('/');
-   }, [access]);
+   }, [access, navigate]);
 
    const onClose= (id) => {
       const charactersFiltered = characters.filter(characters => characters.id !== Number(id))

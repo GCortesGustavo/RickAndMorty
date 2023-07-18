@@ -1,0 +1,29 @@
+.container, .form{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    background-color: #468B97;
+    margin: 10% 40% 40% 40%;
+    border-radius: 5%;
+  }
+
+.email, .password{
+    color: white;
+}
+
+.textEmail, .textPassword{
+    color: red ;
+}
+
+.button{
+   background-color: #1D5B79;
+   color: #F3AA60;
+   border-radius: 10%;
+   width: 100%;
+   height: 140%;
+}
+
+h2{
+    color: aliceblue;
+}
