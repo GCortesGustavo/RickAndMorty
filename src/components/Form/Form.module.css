@@ -1,29 +1,74 @@
-.container, .form{
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column;
-    background-color: #468B97;
-    margin: 10% 40% 40% 40%;
-    border-radius: 5%;
-  }
-
-.email, .password{
-    color: white;
+.background {
+    background-image: url("./Images-login/DEFINITIVA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-attachment: fixed; 
 }
 
+.container{
+    background-image: url("./Images-login/FORDIVFORM.jpg");
+    background-size: cover;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5%;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+  }
+  
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: inherit;
+    margin-top: 100px;
+}
+.password{
+    color: #ace932;
+    background-color: rgb(33, 51, 99, 80%);
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.email{
+    color: #ace932;
+    background-color: rgb(33, 51, 99, 80%);
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.line{
+    border: solid 0.5px white;
+    width: 100%;
+}
 .textEmail, .textPassword{
     color: red ;
 }
 
 .button{
    background-color: #1D5B79;
-   color: #F3AA60;
+   color: #63c222 ;
    border-radius: 10%;
-   width: 100%;
-   height: 140%;
+   width: 25%;
+   height: 50px;
+   margin: auto;
 }
 
-h2{
-    color: aliceblue;
+.login{
+    color: #ace932;
+    background-color: rgb(33, 51, 99, 80%);
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 5px ;
 }
+
+
+.errors {
+    color: red;
+    background-color: rgb(33, 51, 99, 80%)
+}
+
+
+
