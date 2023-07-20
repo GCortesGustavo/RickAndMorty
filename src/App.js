@@ -7,7 +7,7 @@ import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Form from './components/Form/Form';
-
+import Favorites from './components/Favorites/Favorites';
 
 const EMAIL = "Gcortes@gmail.com"
 const PASSWORD = "123asd"
@@ -50,7 +50,7 @@ function App() {
       <div className='App'>
          {
             location.pathname !== "/"
-            ? <Nav onSearch={onSearch}/>
+            ? <Nav onSearch={onSearch}  setAccess={setAccess}/>
             : null
          }
          
@@ -63,6 +63,8 @@ function App() {
             <Route path='/detail/:id' element={<Detail/>}/>
 
             <Route path='/' element={<Form login={login}/>}/>
+
+            <Route path="/favorites" element={<Favorites />}/>
 
          </Routes>
       </div>
