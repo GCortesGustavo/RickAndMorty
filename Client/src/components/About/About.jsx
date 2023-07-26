@@ -9,8 +9,9 @@ const About = () => {
         <p className={style.parrafo}>I`m from Argentina, Mendoza</p>
         <h2 className={style.titulo}>Technologies</h2>
         <p className={style.parrafo}>JS-HTML-CSS-REACT-REDUX</p>
-        </div>
         <div className={style.foto}></div>
+        </div>
+        
         </>
         
     )
