@@ -8,6 +8,7 @@ const Nav = ({onSearch, setAccess}) => {
         setAccess(false);
         
     }
+    
     return(
         <div className={style.nav}>
             <SearchBar onSearch={onSearch} />
