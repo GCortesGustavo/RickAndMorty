@@ -9,11 +9,15 @@ const postFav = (req, res) => {
 }
 
 const deleteFav = (req, res) => {
-    const {id} = req.params; //extraemos id de los parametros del character
 
-    myFavorites = myFavorites.filter((favorite) => favorite.id !== +id) //se utiliza filter en el array. Esto se hace para verificar si el favorite.id es distinto del id proporcionado. El OPERADOR + se utilizapara conventir un string en un numero
+    const { id } = req.params //extraemos id de los parametros del character
 
-    return res.status(200).json(myFavorites) // se devulve un resultado Ok con la nueva matriz, excluyendo el objeto eliminado
+    const deleteCharacter = myFavorites.filter((character)=> character.id !== id ) //se utiliza filter en el array. Esto se hace para verificar si el favorite.id es distinto del id proporcionado. El OPERADOR + se utilizapara conventir un string en un numero
+
+    myFavorites = deleteCharacter
+
+    return res.json(myFavorites)// se devulve un resultado Ok con la nueva matriz, excluyendo el objeto eliminado
+
 }
 
 module.exports = {
