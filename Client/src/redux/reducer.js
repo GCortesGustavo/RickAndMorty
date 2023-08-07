@@ -6,9 +6,9 @@ const initialState = {
 }
 
 const reducer = (state= initialState,{type, payload}) => {
-     switch(type){
+    switch(type){
         case ADD_FAV:
-         return { 
+        return { 
             ...state, myFavorites: 
             payload, 
             allCharacters: payload 
@@ -16,8 +16,8 @@ const reducer = (state= initialState,{type, payload}) => {
 
         case REMOVE_FAV:
             return { 
-                 ...state, 
-                  myFavorites: payload 
+                ...state, 
+                myFavorites: payload 
             };
 
 
@@ -43,7 +43,7 @@ const reducer = (state= initialState,{type, payload}) => {
 
         default: 
         return {...state}
-     }
+    }
 }
 
 

@@ -6,7 +6,6 @@ const Nav = ({onSearch, setAccess}) => {
     
     const handleLogOut = () => {
         setAccess(false);
-        
     }
     
     return(
@@ -14,9 +13,9 @@ const Nav = ({onSearch, setAccess}) => {
             <SearchBar onSearch={onSearch} />
             
             <div className={style.buttons}>
-                <Link to="/about" className={style.btn}>ABOUT</Link>
-
                 <Link to="/home" className={style.btn}>HOME</Link>
+                
+                <Link to="/about" className={style.btn}>ABOUT</Link>
                 
                 <Link to="/favorites" className={style.btn}>FAVORITES</Link>
             {/* <button className={style.about}>

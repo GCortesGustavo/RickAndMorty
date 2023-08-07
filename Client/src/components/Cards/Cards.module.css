@@ -1,7 +1,6 @@
 .container {
-    width: 320px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }

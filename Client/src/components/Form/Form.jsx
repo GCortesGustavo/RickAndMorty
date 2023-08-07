@@ -35,15 +35,19 @@ const Form = ({login}) => {
 
             <label htmlFor="email" className={style.email}>Email:</label>
             <input type="text" name="email" value={userData.email} onChange={handleChange} className={style.textEmail}></input>
+
             {
                 errors.email && <p className={style.errors}>{errors.email}</p>
             }
+
             <hr className={style.line}/>
             <label htmlFor="password" className={style.password}>Password:</label>
             <input type="password" name="password" value={userData.password} onChange={handleChange} className={style.textPassword}></input>
+
             {
                 errors.password && <p className={style.errors}>{errors.password}</p>
             }
+
             <hr className={style.line} />
             <button className={style.button}>Submit</button>
         </form>

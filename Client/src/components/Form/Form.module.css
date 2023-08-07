@@ -17,8 +17,8 @@
     width: 500px;
     height: 500px;
     padding: 30px;
-  }
-  
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -48,12 +48,12 @@
 }
 
 .button{
-   background-color: #1D5B79;
-   color: #63c222 ;
-   border-radius: 10%;
-   width: 25%;
-   height: 50px;
-   margin: auto;
+    background-color: #1D5B79;
+    color: #63c222 ;
+    border-radius: 10%;
+    width: 25%;
+    height: 50px;
+    margin: auto;
 }
 
 .login{
