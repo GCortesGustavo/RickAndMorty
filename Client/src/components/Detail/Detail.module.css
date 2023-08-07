@@ -1,0 +1,12 @@
+.container {
+    border: 1px solid #000;
+    padding: 26px;
+    width: 375px;
+    height: 396px;
+    margin: 10px;
+    /* background-image: url("../Images/CARDFORNDO.jpg"); */
+    border-radius: 28px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+}

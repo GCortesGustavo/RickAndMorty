@@ -51,7 +51,6 @@ const Favorites = ({myFavorites}) => {
 const mapStateToProps = (state) => {
     return{
         myFavorites: state.myFavorites,
-
     }
 }
 export default connect (

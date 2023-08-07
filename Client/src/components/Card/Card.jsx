@@ -31,11 +31,11 @@ function Card(props) {
    return (
       <div className={style.container}>
          {
-            isFav 
+            isFav
             ? (
-               <button onClick={handleFavorite}>❤️</button>
+               <button onClick={handleFavorite} className={style.fav}>❤️</button>
             ) : (
-               <button onClick={handleFavorite}>🤍</button>
+               <button onClick={handleFavorite} className={style.fav}>🤍</button>
             )
          }
 
@@ -46,13 +46,13 @@ function Card(props) {
          <div className={style.minicontainer}>
          <Link to={`/detail/${id}`}><h2 className={style.name}>Name: {name}</h2></Link>
          <h2 className={style.status}>Status: {status}</h2>
-         <h2 className={style.species}>Specie: {species}</h2>
-         <h2 className={style.gender}>Gender: {gender}</h2>
+         {/* <h2 className={style.species}>Specie: {species}</h2>
+         <h2 className={style.gender}>Gender: {gender}</h2> */}
          <h2 className={style.origin}>Origin: {origin}</h2>
          </div>
 
 
-         <img className={style.image} src={image} alt='' /> 
+         <img className={style.image} src={image} alt='character' /> 
 
       </div>
    );

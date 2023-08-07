@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-
+import style from "./Detail.module.css"
 
 const Detail = () => {
    const {id} = useParams()
@@ -22,7 +22,7 @@ const Detail = () => {
 
 
    return(
-      <div>
+      <div className={style.container}>
          <h2>{character?.name}</h2>
          <h2>{character?.status}</h2>
          <h2>{character?.species}</h2>
@@ -33,4 +33,4 @@ const Detail = () => {
    )
 }
 
-export default Detail
+export default Detail;
