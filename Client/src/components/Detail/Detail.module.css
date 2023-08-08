@@ -1,12 +1,30 @@
 .container {
     border: 1px solid #000;
     padding: 26px;
-    width: 375px;
-    height: 396px;
-    margin: 10px;
-    /* background-image: url("../Images/CARDFORNDO.jpg"); */
+    width: 70vh;
+    height: 44vh;
+    margin: auto;
+    margin-top: 80px;
+    background-image: url("./FONDODEFINITIVO.jpg");
     border-radius: 28px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: cornflowerblue;
+    -webkit-animation: pulsate-fwd 3000ms ease-in-out infinite both;
+    animation: pulsate-fwd 3000ms ease-in-out infinite both;
+}
+
+.photo {
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.title {
+    font-size: 15px;
+    color: hsl(96, 70%, 45%);
+    background-color:  rgb(37, 45, 59, 0.6);
+    border-radius: 5px;
+    margin: 0px 10px 10px 165px;
 }

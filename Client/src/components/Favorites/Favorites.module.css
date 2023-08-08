@@ -1,0 +1,20 @@
+.order, .filter  {
+    background-color: #252d3b;
+    color: #63c222;
+    margin: 10px;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Mynerve', cursive;
+    font-size: 18px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -23,12 +23,12 @@ const Detail = () => {
 
    return(
       <div className={style.container}>
-         <h2>{character?.name}</h2>
-         <h2>{character?.status}</h2>
-         <h2>{character?.species}</h2>
-         <h2>{character?.gender}</h2>
-         <h2>{character?.origin?.name}</h2>
-         <img src={character?.image} alt="" />
+         <h2 className={style.title}>Name: {character?.name}</h2>
+         <h2 className={style.title}>Status: {character?.status}</h2>
+         <h2 className={style.title}>Species: {character?.species}</h2>
+         <h2 className={style.title}>Gender: {character?.gender}</h2>
+         <h2 className={style.title}>Origin: {character?.origin?.name}</h2>
+         <img src={character?.image} alt="fotito" className={style.photo} />
       </div>
    )
 }

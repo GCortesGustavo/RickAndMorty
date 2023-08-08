@@ -63,8 +63,7 @@
         -webkit-transition: .5s, color .10s;
         -moz-transition: .5s, color .10s; 
 }    
-              
-              
+
 .logOut:hover {
     background-color:  #cddfb6;
     color: red;
