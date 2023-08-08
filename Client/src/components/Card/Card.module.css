@@ -1,3 +1,32 @@
+@-webkit-keyframes pulsate-fwd {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+@keyframes pulsate-fwd {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+    50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+
 h2 {
     background-color: rgb(225, 236, 182, 0.7);
     color:  rgb(40, 42, 26);
@@ -9,13 +38,15 @@ h2 {
 .container {
     border: 1px solid #000;
     padding: 26px;
-    width: 375px;
-    height: 396px;
-    margin: 10px;
+    width: 280px;
+    height: 350px;
+    margin: 40px;
     background-image: url("./Images/CARDFORNDO.jpg");
     border-radius: 28px;
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-animation: pulsate-fwd 3000ms ease-in-out infinite both;
+    animation: pulsate-fwd 3000ms ease-in-out infinite both;
 }
 
 .image {
@@ -23,7 +54,7 @@ h2 {
     border-radius: 10px;
     width: 200px;
     height: 200px;
-    margin: 40px;
+    margin: 20px;
 }
 
 .exit {

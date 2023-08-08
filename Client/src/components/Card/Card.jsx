@@ -55,10 +55,10 @@ function Card(props) {
 
          <div className={style.minicontainer}>
          <Link to={`/detail/${id}`}><h2 className={style.name}>Name: {name}</h2></Link>
-         <h2 className={style.status}>Status: {status}</h2>
+         <h2 className={style.gender}>Gender:{gender}</h2>
          {/* <h2 className={style.species}>Specie: {species}</h2>
          <h2 className={style.gender}>Gender: {gender}</h2> */}
-         <h2 className={style.origin}>Origin: {origin}</h2>
+         {/* <h2 className={style.origin}>Origin: {origin}</h2> */}
          </div>
 
 

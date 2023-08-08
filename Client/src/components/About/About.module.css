@@ -1,30 +1,57 @@
+@-webkit-keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    }
+}
+
 .contenedor {
     background-size: cover;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 190px;
-    border-radius: 2%;
+    border-radius: 4%;
     width: 650px;
     height: 400px;
     padding: 30px;
-    background-color: red;
     background-image: url("./FONDOGALAXIA.jpg");
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+
 .titulo {
-    color: hsl(283, 79%, 69%);
-    background-color: #3a2d20 ;
-    border-radius: 2%;
+    color: #252d3b;
+    background-color: #63c222 ;
+    border-radius: 7%;
 }
 
 .parrafo {
-    color: #3a2d20;
-    background-color: hsl(283, 79%, 69%);
-    border-radius: 2%;
+    color: #63c222;
+    background-color: #252d3b;
+    border-radius: 7%;
 }
 
 .foto {
@@ -34,8 +61,8 @@
         min-width: 58vh;
         min-height: 35vh;
         position: absolute;
-        left: 104vh;
-        bottom: 46vh;
+        left: 39vh;
+        bottom: 5vh;
         display: flex;
     
 } 
