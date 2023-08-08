@@ -38,11 +38,11 @@ function App() {
       !access && navigate('/');
    }, [access, navigate]);
 
-   const onClose= (id) => {
-      const charactersFiltered = characters.filter(characters => characters.id !== +id)
+
+   const onClose = (id) => {
+      const charactersFiltered = characters?.filter(character => character.id !== id)
       setCharacters(charactersFiltered)
    }
-
 
    function onSearch(id) {
       axios(`http://localhost:3001/rickandmorty/character/${id}`)

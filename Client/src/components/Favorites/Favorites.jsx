@@ -1,15 +1,15 @@
 import Card from "../Card/Card";
 import { connect, useDispatch } from "react-redux";
 import { filterCards, orderCards } from "../../redux/actions";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Favorites = ({myFavorites}) => {
     const dispatch = useDispatch();
-    const [aux, setAux] = useState(false)
+    // const [aux, setAux] = useState(false)
 
     const handlerOrder = (event) => {
         dispatch(orderCards(event.target.value))
-        setAux(true)
+        
     }
 
     const handlerFilter = (event) => {
@@ -43,6 +43,11 @@ const Favorites = ({myFavorites}) => {
                         />
                     )
                 })
+                // {myFavorites.length === 0 ? (
+                //     <h3 className='emptyFav'>Empty favorites list!</h3>
+                //   ) : (
+                //     <Card characters={myFavorites} />
+                //   )}
             }
         </div>
     )

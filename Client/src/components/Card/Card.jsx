@@ -1,12 +1,13 @@
 import style from "./Card.module.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {addFav, removeFav} from "../../redux/actions";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 
+
 function Card(props) {
    const {id, name, status, species, gender, origin, image, onClose, addFav, removeFav, myFavorites} = props;
-
+   const location = useLocation()
    const [isFav, setIsFav] = useState(false);
 
    const handleFavorite = () => {
@@ -30,7 +31,7 @@ function Card(props) {
 
    return (
       <div className={style.container}>
-         {
+         {/* {
             isFav
             ? (
                <button onClick={handleFavorite} className={style.fav}>❤️</button>
@@ -40,7 +41,16 @@ function Card(props) {
          }
 
 
-         <button className={style.exit} onClick={() => onClose(id)}>X</button>
+         <button className={style.exit} onClick={() => {onClose(id)}}>❌</button> */}
+
+      {/* <button className="heart" onClick={handleFavorite}>{isFav ? "❤️" : "🤍"}</button>
+      {!pathname.includes("/favorites") && (
+      <button className="close" onClick={() => onClose(id)}>❌</button>
+      )} */}
+
+      {location.pathname !== '/favorites'?<button  className={style.exit} onClick={()=>{onClose(id)}}>❌</button>: <button className={style.exit}></button>}
+
+      <button className={style.fav} onClick={handleFavorite}>{isFav ? '❤️' : '🤍'}</button>
 
 
          <div className={style.minicontainer}>
