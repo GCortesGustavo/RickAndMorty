@@ -55,7 +55,6 @@ function App() {
       }).catch((error) => {
          window.alert(error)
       })
-
    }
 
    return (
